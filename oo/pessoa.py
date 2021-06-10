@@ -28,25 +28,24 @@ if __name__ == '__main__':
     print(Luciano.idade)
     for filho in Luciano.filhos:
         print(filho.nome)
-    del Luciano.filhos
-    Luciano.sobrenome = 'Ramalho'
-    Luciano.olhos = 1
-    del Luciano.olhos
-    print(Luciano.__dict__)
-    print(Renzo.__dict__)
-    Pessoa.olhos=3
-    print(Pessoa.olhos)
-    print(Luciano.olhos)
-    print(Renzo.olhos)
-    print(id(Pessoa.olhos), id(Luciano.olhos), id(Renzo.olhos))
-    print(Pessoa.metodo_estatico() , Luciano.metodo_estatico())
-    print(Pessoa.nome_e_atributos_de_classe() , Luciano.nome_e_atributos_de_classe())
-    pessoaAnonima = Pessoa('Anonimo')
-    print(isinstance(pessoaAnonima, Pessoa))
-    print(isinstance(pessoaAnonima, homem))
-    print(isinstance(Renzo, homem))
-    print(isinstance(Renzo, Pessoa))
-
+        del Luciano.filhos
+        Luciano.sobrenome = 'Ramalho'
+        Luciano.olhos = 1
+        del Luciano.olhos
+        print(Luciano.__dict__)
+        print(Renzo.__dict__)
+        print(Pessoa.olhos)
+        print(Luciano.olhos)
+        print(Renzo.olhos)
+        print(id(Pessoa.olhos), id(Luciano.olhos), id(Renzo.olhos))
+        print(Pessoa.metodo_estatico() , Luciano.metodo_estatico())
+        print(Pessoa.nome_e_atributos_de_classe() , Luciano.nome_e_atributos_de_classe())
+        pessoaAnonima = Pessoa('Anonimo')
+        print(isinstance(pessoaAnonima, Pessoa))
+        print(isinstance(pessoaAnonima, homem))
+        print(isinstance(Renzo, homem))
+        print(isinstance(Renzo, Pessoa))
+        print(Renzo.olhos)
 
 
 
